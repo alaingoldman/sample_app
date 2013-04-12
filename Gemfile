@@ -8,6 +8,14 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
 end
 
+#  annotates the model to tell you the details
+#  to get it to update  run 
+#  $ bundle exec annotate
+#  then locate it in app/models/user.rb  (or equivalent)
+group :development do
+  gem 'annotate', '2.5.0'
+end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -26,6 +34,6 @@ group :production do
   gem 'pg', '0.12.2'
 end
 
-# added by alain below
-# gem 'haml'
 gem 'bootstrap-sass', '2.1'
+
+gem 'bcrypt-ruby', '3.0.1'
